@@ -1,0 +1,29 @@
+/**	This is the css used for 22		**/
+/*	Created on: 12th February 2015 	*/
+/*	Author: Liching Yew 			*/
+
+
+h1,h2,p{
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+/** header **/
+
+body{
+	overflow-x: hidden;
+}
+
+header{
+	overflow-y: hidden;
+}
+
+.fill {
+	width: 110%;
+	height: 110%;
+}
+
+header img{
+	width: 150px;
+	height: 150px;
+	margin: -2px;
+}
