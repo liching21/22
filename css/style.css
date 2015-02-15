@@ -1,16 +1,23 @@
 /**	This is the css used for 22		**/
 /*	Created on: 12th February 2015 	*/
 /*	Author: Liching Yew 			*/
-
+html{
+	/**height: 100%;**/
+}
 
 h1,h2,p{
 	font-family: 'Shadows Into Light Two', cursive;
+}
+
+h1{
+	font-size: 72px;
 }
 
 /** header **/
 
 body{
 	overflow-x: hidden;
+	height: 100%;
 }
 
 header{
@@ -19,11 +26,63 @@ header{
 
 .fill {
 	width: 110%;
-	height: 110%;
+	max-height: 100%;
+}
+
+header .header-img{
+	width: 150px;
+	height: 150px;
+	position:relative;
+	display: inline-block;
+	-webkit-transition: all 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s;
 }
 
 header img{
-	width: 150px;
-	height: 150px;
-	margin: -2px;
+	width: 100%;
+}
+
+.header-img:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top: 0; 
+    left: 0;
+    background:rgba(231,120,117,0.6);
+    opacity:1;
+    transition: all 0.2s;
+    -webkit-transition: all 0.5s;
+}
+.header-img:hover:after{
+    opacity:0;
+}
+
+.header-img:hover{
+	-ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Chrome, Safari, Opera */
+    transform: scale(1.1,1.1); /* Standard syntax */
+    z-index: 2;
+}
+
+.header-text{
+	padding: 100px;
+	color:#eee;
+	z-index: 5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+header p{
+	font-size: 24px;
+	margin-top: 72px;
+}
+
+/** month **/
+
+.month{
+	height: 500px;
+	width: 100%;
 }
