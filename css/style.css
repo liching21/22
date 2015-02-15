@@ -110,6 +110,26 @@ header p{
 	padding: 0px;
 }
 
+.jan-text{
+	color: #414141;
+}
+
+.apr-text{
+	color: #eee;
+}
+
+.jul-text{
+	color: #ccc;
+}
+
+.sep-text{
+	color: #774b23;
+}
+
+.dec-text{
+	color: #957d66;
+}
+
 #jan{
 	background-image: url("../assets/background/congruent_pentagon.png");
 }
