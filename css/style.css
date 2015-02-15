@@ -2,7 +2,7 @@
 /*	Created on: 12th February 2015 	*/
 /*	Author: Liching Yew 			*/
 html{
-	/**height: 100%;**/
+	height: 100%;
 }
 
 h1,h2,p{
@@ -83,6 +83,80 @@ header p{
 /** month **/
 
 .month{
-	height: 500px;
+	height: 400px;
 	width: 100%;
+	color: #767676;
+	background-repeat: repeat;
 }
+
+.month h2{
+	font-size: 48px;
+	margin: 48px 0px 48px 48px;
+}
+
+.month p{
+	font-size: 20px;
+	margin-left: 48px;
+}
+
+.month img{
+	width: 100%;
+	overflow: hidden;
+}
+
+.half{
+	overflow: hidden;
+	height: 400px;
+	padding: 0px;
+}
+
+#jan{
+	background-image: url("../assets/background/congruent_pentagon.png");
+}
+
+#feb{
+	background-image: url("../assets/background/food.png");
+}
+
+#mar{
+	background-image: url("../assets/background/shattered.png");
+}
+
+#apr{
+	background-image: url("../assets/background/green_cup.png");
+}
+
+#may{
+	background-image: url("../assets/background/school.png");
+}
+
+#jun{
+	background-image: url("../assets/background/gplaypattern.png");
+}
+
+#jul{
+	background-image: url("../assets/background/stardust.png");
+}
+
+#aug{
+	background-image: url("../assets/background/tree_bark.png");
+}
+
+#sep{
+	background-image: url("../assets/background/retina_wood_@2X.png");
+}
+
+#oct{
+	background-image: url("../assets/background/old_wall.png");
+}
+
+#nov{
+	background-image: url("../assets/background/brickwall.png");
+    /** TODO: grey overlay **/
+}
+
+#dec{
+	background-image: url("../assets/background/fabric_of_squares_gray.png");
+	/** TODO: yellow overlay **/
+}
+
