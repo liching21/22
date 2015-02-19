@@ -114,6 +114,10 @@ header .fa-angle-double-down{
 
 /** month **/
 
+.hideme{
+	opacity: 0;
+}
+
 .month{
 	height: 400px;
 	width: 100%;

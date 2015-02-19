@@ -31,7 +31,33 @@
 	<script>
 		window.addEventListener("load", function(){
 			var load_screen = document.getElementById("load_screen");
-			document.body.removeChild(load_screen);
+			
+			// wait 3 seconds
+
+
+			// fade out
+			$(load_screen).fadeOut(1000);
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+    
+	    /* Every time the window is scrolled ... */
+	    $(window).scroll( function(){
+	    
+	        /* Check the location of each desired element */
+	        $('.hideme').each( function(i){
+	            
+	            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+	            var bottom_of_window = $(window).scrollTop() + $(window).height();
+	            
+	            /* If the object is completely visible in the window, fade it it */
+	            if( bottom_of_window > bottom_of_object - 200){
+	                
+	                $(this).animate({'opacity':'1'},500);                    
+		            }           
+		        });    
+		    });   
 		});
 	</script>
 
@@ -51,7 +77,7 @@
   	  </div>
   	</header>
 
-  	<section class="month row-fluid" id="feb">
+  	<section class="hideme month row-fluid" id="feb">
   	  <div class="col-xs-6 half text">
   	  	<h2>February</h2>
   	  	<p>
@@ -63,7 +89,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid" id="mar">
+  	<section class="hideme month row-fluid" id="mar">
   	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>March</h2>
   	  	<p>
@@ -75,7 +101,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid apr-text" id="apr">
+  	<section class="hideme month row-fluid apr-text" id="apr">
   	  <div class="col-xs-6 half text">
   	  	<h2>April</h2>
   	  	<p>
@@ -87,7 +113,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid" id="may">
+  	<section class="hideme month row-fluid" id="may">
   	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>May</h2>
   	  	<p>
@@ -99,7 +125,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid" id="jun">
+  	<section class="hideme month row-fluid" id="jun">
   	  <div class="col-xs-6 half text">
   	  	<h2>June</h2>
   	  	<p>
@@ -111,7 +137,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid jul-text" id="jul">
+  	<section class="hideme month row-fluid jul-text" id="jul">
   	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>July</h2>
   	  	<p>
@@ -124,7 +150,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid" id="aug">
+  	<section class="hideme month row-fluid" id="aug">
   	  <div class="col-xs-6 half text">
   	  	<h2>August</h2>
   	  	<p>
@@ -136,7 +162,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid sep-text" id="sep">
+  	<section class="hideme month row-fluid sep-text" id="sep">
   	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>September</h2>
   	  	<p>
@@ -148,7 +174,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid" id="oct">
+  	<section class="hideme month row-fluid" id="oct">
   	  <div class="col-xs-6 half text">
   	  	<h2>October</h2>
   	  	<p>
@@ -160,7 +186,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid" id="nov">
+  	<section class="hideme month row-fluid" id="nov">
   	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>November</h2>
   	  	<p>
@@ -172,7 +198,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid dec-text" id="dec">
+  	<section class="hideme month row-fluid dec-text" id="dec">
   	  <div class="col-xs-6 half text">
   	  	<h2>December</h2>
   	  	<p>
@@ -184,7 +210,7 @@
   	  </div>
   	</section>
 
-  	<section class="month row-fluid jan-text" id="jan">
+  	<section class="hideme month row-fluid jan-text" id="jan">
   	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>January</h2>
   	  	<p>
@@ -196,7 +222,7 @@
   	  </div>
   	</section>
 
-  	<footer class="fill">
+  	<footer class="fill hideme">
 
   		<!-- 1 -->
   	  	<div class="footer-img"><img src="assets/header/jan1.jpg"></div><div class="footer-img"><img src="assets/header/feb1.jpg"></div><div class="footer-img"><img src="assets/header/mar1.jpg"></div><div class="footer-img"><img src="assets/header/apr1.jpg"></div><div class="footer-img"><img src="assets/header/may1.jpg"></div><div class="footer-img"><img src="assets/header/jun1.jpg"></div><div class="footer-img"><img src="assets/header/jul1.jpg"></div><div class="footer-img"><img src="assets/header/aug1.jpg"></div><div class="footer-img"><img src="assets/header/sep1.jpg"></div><div class="footer-img"><img src="assets/header/oct1.jpg"></div><div class="footer-img"><img src="assets/header/dec1.jpg"></div><!-- 2 --><div class="footer-img"><img src="assets/header/jan2.jpg"></div><div class="footer-img"><img src="assets/header/feb2.jpg"></div><div class="footer-img"><img src="assets/header/mar2.jpg"></div><div class="footer-img"><img src="assets/header/apr2.jpg"></div><div class="footer-img"><img src="assets/header/may2.jpg"></div><div class="footer-img"><img src="assets/header/jun2.jpg"></div><div class="footer-img"><img src="assets/header/jul2.jpg"></div><div class="footer-img"><img src="assets/header/aug2.jpg"></div><div class="footer-img"><img src="assets/header/sep2.jpg"></div><div class="footer-img"><img src="assets/header/oct2.jpg"></div><div class="footer-img"><img src="assets/header/dec2.jpg"></div><!-- 3 --><div class="footer-img"><img src="assets/header/jan3.jpg"></div><div class="footer-img"><img src="assets/header/feb3.jpg"></div><div class="footer-img"><img src="assets/header/mar3.jpg"></div><div class="footer-img"><img src="assets/header/apr3.jpg"></div><div class="footer-img"><img src="assets/header/may3.jpg"></div><div class="footer-img"><img src="assets/header/jun3.jpg"></div><div class="footer-img"><img src="assets/header/jul3.jpg"></div><div class="footer-img"><img src="assets/header/aug3.jpg"></div><div class="footer-img"><img src="assets/header/oct3.jpg"></div><div class="footer-img"><img src="assets/header/dec3.jpg"></div><!-- 4 --><div class="footer-img"><img src="assets/header/jan4.jpg"></div><div class="footer-img"><img src="assets/header/feb4.jpg"></div><div class="footer-img"><img src="assets/header/mar4.jpg"></div><div class="footer-img"><img src="assets/header/apr4.jpg"></div><div class="footer-img"><img src="assets/header/may4.jpg"></div><div class="footer-img"><img src="assets/header/jun4.jpg"></div><div class="footer-img"><img src="assets/header/aug4.jpg"></div><div class="footer-img"><img src="assets/header/dec4.jpg"></div><!-- 5 --><div class="footer-img"><img src="assets/header/jan5.jpg"></div><div class="footer-img"><img src="assets/header/feb5.jpg"></div><div class="footer-img"><img src="assets/header/mar5.jpg"></div><div class="footer-img"><img src="assets/header/apr5.jpg"></div><div class="footer-img"><img src="assets/header/may5.jpg"></div><div class="footer-img"><img src="assets/header/jun5.jpg"></div></div><div class="footer-img"><img src="assets/header/dec5.jpg"></div><!--6--><div class="footer-img"><img src="assets/header/jan6.jpg"></div><div class="footer-img"><img src="assets/header/may6.jpg"></div><div class="footer-img"><img src="assets/header/jun6.jpg"></div><div class="footer-img"><img src="assets/header/dec6.jpg"></div><!--7--><div class="footer-img"><img src="assets/header/may7.jpg"></div><div class="footer-img"><img src="assets/header/jun7.jpg"></div><div class="footer-img"><img src="assets/header/dec7.jpg"></div><!--8--><div class="footer-img"><img src="assets/header/may8.jpg"></div><div class="footer-img"><img src="assets/header/dec8.jpg"></div><!--9--><div class="footer-img"><img src="assets/header/may9.jpg"></div><div class="footer-img"><img src="assets/header/dec9.jpg"></div><!--10--><div class="footer-img"><img src="assets/header/may10.jpg"></div><div class="footer-img"><img src="assets/header/dec10.jpg"></div><!--11--><div class="footer-img"><img src="assets/header/may11.jpg"></div><div class="footer-img"><img src="assets/header/dec11.jpg"></div><!--12--><div class="footer-img"><img src="assets/header/dec12.jpg"></div><!--13--><div class="footer-img"><img src="assets/header/dec13.jpg"></div><!--14--><div class="footer-img"><img src="assets/header/dec14.jpg"></div>
