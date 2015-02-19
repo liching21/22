@@ -28,10 +28,18 @@
 	=============================================== -->
 	<script src="js/jquery-1.11.0.js"></script>	
 	<script src="js/bootstrap.js"></script>
+	<script>
+		window.addEventListener("load", function(){
+			var load_screen = document.getElementById("load_screen");
+			document.body.removeChild(load_screen);
+		});
+	</script>
 
   </head>
 
   <body>
+  	<div id="load_screen"><div id="loading"><i class="fa fa-circle-o-notch fa-spin"></i></div></div>
+
   	<header class="fill">
   	  <!-- 1 -->
   	  <div class="header-img"><img src="assets/header/jan1.jpg"></div><div class="header-img"><img src="assets/header/feb1.jpg"></div><div class="header-img"><img src="assets/header/mar1.jpg"></div><div class="header-img"><img src="assets/header/apr1.jpg"></div><div class="header-img"><img src="assets/header/may1.jpg"></div><div class="header-img"><img src="assets/header/jun1.jpg"></div><div class="header-img"><img src="assets/header/jul1.jpg"></div><div class="header-img"><img src="assets/header/aug1.jpg"></div><div class="header-img"><img src="assets/header/sep1.jpg"></div><div class="header-img"><img src="assets/header/oct1.jpg"></div><div class="header-img"><img src="assets/header/dec1.jpg"></div><!-- 2 --><div class="header-img"><img src="assets/header/jan2.jpg"></div><div class="header-img"><img src="assets/header/feb2.jpg"></div><div class="header-img"><img src="assets/header/mar2.jpg"></div><div class="header-img"><img src="assets/header/apr2.jpg"></div><div class="header-img"><img src="assets/header/may2.jpg"></div><div class="header-img"><img src="assets/header/jun2.jpg"></div><div class="header-img"><img src="assets/header/jul2.jpg"></div><div class="header-img"><img src="assets/header/aug2.jpg"></div><div class="header-img"><img src="assets/header/sep2.jpg"></div><div class="header-img"><img src="assets/header/oct2.jpg"></div><div class="header-img"><img src="assets/header/dec2.jpg"></div><!-- 3 --><div class="header-img"><img src="assets/header/jan3.jpg"></div><div class="header-img"><img src="assets/header/feb3.jpg"></div><div class="header-img"><img src="assets/header/mar3.jpg"></div><div class="header-img"><img src="assets/header/apr3.jpg"></div><div class="header-img"><img src="assets/header/may3.jpg"></div><div class="header-img"><img src="assets/header/jun3.jpg"></div><div class="header-img"><img src="assets/header/jul3.jpg"></div><div class="header-img"><img src="assets/header/aug3.jpg"></div><div class="header-img"><img src="assets/header/oct3.jpg"></div><div class="header-img"><img src="assets/header/dec3.jpg"></div><!-- 4 --><div class="header-img"><img src="assets/header/jan4.jpg"></div><div class="header-img"><img src="assets/header/feb4.jpg"></div><div class="header-img"><img src="assets/header/mar4.jpg"></div><div class="header-img"><img src="assets/header/apr4.jpg"></div><div class="header-img"><img src="assets/header/may4.jpg"></div><div class="header-img"><img src="assets/header/jun4.jpg"></div><div class="header-img"><img src="assets/header/aug4.jpg"></div><div class="header-img"><img src="assets/header/dec4.jpg"></div><!-- 5 --><div class="header-img"><img src="assets/header/jan5.jpg"></div><div class="header-img"><img src="assets/header/feb5.jpg"></div><div class="header-img"><img src="assets/header/mar5.jpg"></div><div class="header-img"><img src="assets/header/apr5.jpg"></div><div class="header-img"><img src="assets/header/may5.jpg"></div><div class="header-img"><img src="assets/header/jun5.jpg"></div></div><div class="header-img"><img src="assets/header/dec5.jpg"></div><!--6--><div class="header-img"><img src="assets/header/jan6.jpg"></div><div class="header-img"><img src="assets/header/may6.jpg"></div><div class="header-img"><img src="assets/header/jun6.jpg"></div><div class="header-img"><img src="assets/header/dec6.jpg"></div><!--7--><div class="header-img"><img src="assets/header/may7.jpg"></div><div class="header-img"><img src="assets/header/jun7.jpg"></div><div class="header-img"><img src="assets/header/dec7.jpg"></div><!--8--><div class="header-img"><img src="assets/header/may8.jpg"></div><div class="header-img"><img src="assets/header/dec8.jpg"></div><!--9--><div class="header-img"><img src="assets/header/may9.jpg"></div><div class="header-img"><img src="assets/header/dec9.jpg"></div><!--10--><div class="header-img"><img src="assets/header/may10.jpg"></div><div class="header-img"><img src="assets/header/dec10.jpg"></div><!--11--><div class="header-img"><img src="assets/header/may11.jpg"></div><div class="header-img"><img src="assets/header/dec11.jpg"></div><!--12--><div class="header-img"><img src="assets/header/dec12.jpg"></div><!--13--><div class="header-img"><img src="assets/header/dec13.jpg"></div><!--14--><div class="header-img"><img src="assets/header/dec14.jpg"></div>
@@ -44,7 +52,7 @@
   	</header>
 
   	<section class="month row-fluid" id="feb">
-  	  <div class="col-xs-6 half">
+  	  <div class="col-xs-6 half text">
   	  	<h2>February</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
@@ -56,19 +64,19 @@
   	</section>
 
   	<section class="month row-fluid" id="mar">
-  	  <div class="col-xs-6 half">
-  	  	<img src="assets/main/mar-main.jpg">
-  	  </div>
-  	  <div class="col-xs-6 half">
+  	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>March</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
   	  	</p>
   	  </div>
+  	  <div class="photo col-xs-6 half col-sm-pull-6">
+  	  	<img src="assets/main/mar-main.jpg">
+  	  </div>
   	</section>
 
   	<section class="month row-fluid apr-text" id="apr">
-  	  <div class="col-xs-6 half">
+  	  <div class="col-xs-6 half text">
   	  	<h2>April</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
@@ -80,19 +88,19 @@
   	</section>
 
   	<section class="month row-fluid" id="may">
-  	  <div class="col-xs-6 half">
-  	  	<img src="assets/main/may-main.jpg">
-  	  </div>
-  	  <div class="col-xs-6 half">
+  	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>May</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
   	  	</p>
   	  </div>
+  	  <div class="col-xs-6 half col-sm-pull-6">
+  	  	<img src="assets/main/may-main.jpg">
+  	  </div>
   	</section>
 
   	<section class="month row-fluid" id="jun">
-  	  <div class="col-xs-6 half">
+  	  <div class="col-xs-6 half text">
   	  	<h2>June</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
@@ -104,19 +112,20 @@
   	</section>
 
   	<section class="month row-fluid jul-text" id="jul">
-  	  <div class="col-xs-6 half">
-  	  	<img src="assets/main/jul-main.jpg">
-  	  </div>
-  	  <div class="col-xs-6 half">
+  	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>July</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
   	  	</p>
+  	  	
+  	  </div>
+  	  <div class="col-xs-6 half col-sm-pull-6">
+  	  	<img src="assets/main/jul-main.jpg">
   	  </div>
   	</section>
 
   	<section class="month row-fluid" id="aug">
-  	  <div class="col-xs-6 half">
+  	  <div class="col-xs-6 half text">
   	  	<h2>August</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
@@ -128,19 +137,19 @@
   	</section>
 
   	<section class="month row-fluid sep-text" id="sep">
-  	  <div class="col-xs-6 half">
-  	  	<img src="assets/main/sep-main.jpg">
-  	  </div>
-  	  <div class="col-xs-6 half">
+  	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>September</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
   	  	</p>
   	  </div>
+  	  <div class="col-xs-6 half col-sm-pull-6">
+  	  	<img src="assets/main/sep-main.jpg">
+  	  </div>
   	</section>
 
   	<section class="month row-fluid" id="oct">
-  	  <div class="col-xs-6 half">
+  	  <div class="col-xs-6 half text">
   	  	<h2>October</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
@@ -152,19 +161,19 @@
   	</section>
 
   	<section class="month row-fluid" id="nov">
-  	  <div class="col-xs-6 half">
-  	  	<img src="assets/main/nov-main.jpg">
-  	  </div>
-  	  <div class="col-xs-6 half">
+  	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>November</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
   	  	</p>
   	  </div>
+  	  <div class="col-xs-6 half col-sm-pull-6">
+  	  	<img src="assets/main/nov-main.jpg">
+  	  </div>
   	</section>
 
   	<section class="month row-fluid dec-text" id="dec">
-  	  <div class="col-xs-6 half">
+  	  <div class="col-xs-6 half text">
   	  	<h2>December</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
@@ -176,14 +185,14 @@
   	</section>
 
   	<section class="month row-fluid jan-text" id="jan">
-  	  <div class="col-xs-6 half">
-  	  	<img src="assets/main/jan-main.jpg">
-  	  </div>
-  	  <div class="col-xs-6 half">
+  	  <div class="text col-xs-6 half col-sm-push-6">
   	  	<h2>January</h2>
   	  	<p>
   	  	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac scelerisque augue, at dictum nunc. Fusce et aliquam felis, ac vulputate nulla. Fusce vel nisl ipsum. Aliquam dolor libero, tincidunt in metus vitae, pharetra sollicitudin massa. Praesent at vehicula urna.
   	  	</p>
+  	  </div>
+  	  <div class="col-xs-6 half col-sm-pull-6">
+  	  	<img src="assets/main/jan-main.jpg">
   	  </div>
   	</section>
 

@@ -13,6 +13,30 @@ h1{
 	font-size: 72px;
 }
 
+/** loading screen **/
+#load_screen{
+	background: #000;
+	opacity: 0.75;
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#load_screen > #loading{
+	color:#fff;
+	width: 50px;
+	height: 50px;
+	margin: 300px auto;
+}
+
+#load_screen i{
+	font-size: 50px;
+	color: #eee;
+}
+
+
 /** header **/
 
 body{
@@ -139,52 +163,52 @@ header .fa-angle-double-down{
 	color: #957d66;
 }
 
-#jan{
+#jan .text{
 	background-image: url("../assets/background/congruent_pentagon.png");
 }
 
-#feb{
+#feb .text{
 	background-image: url("../assets/background/food.png");
 }
 
-#mar{
+#mar .text{
 	background-image: url("../assets/background/shattered.png");
 }
 
-#apr{
+#apr .text{
 	background-image: url("../assets/background/green_cup.png");
 }
 
-#may{
+#may .text{
 	background-image: url("../assets/background/school.png");
 }
 
-#jun{
+#jun .text{
 	background-image: url("../assets/background/gplaypattern.png");
 }
 
-#jul{
+#jul .text{
 	background-image: url("../assets/background/stardust.png");
 }
 
-#aug{
+#aug .text{
 	background-image: url("../assets/background/tree_bark.png");
 }
 
-#sep{
+#sep .text{
 	background-image: url("../assets/background/retina_wood_@2X.png");
 }
 
-#oct{
+#oct .text{
 	background-image: url("../assets/background/old_wall.png");
 }
 
-#nov{
+#nov .text{
 	background-image: url("../assets/background/brickwall.png");
     /** TODO: grey overlay **/
 }
 
-#dec{
+#dec .text{
 	background-image: url("../assets/background/fabric_of_squares_gray.png");
 	/** TODO: yellow overlay **/
 }
@@ -329,6 +353,6 @@ footer img{
 		padding: 0px;
 	}
 
-	
+
     
 }
