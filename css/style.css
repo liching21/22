@@ -16,7 +16,7 @@ h1{
 /** loading screen **/
 #load_screen{
 	background: #000;
-	opacity: 0.75;
+	opacity: 1;
 	position: fixed;
 	z-index: 10;
 	top: 0px;
