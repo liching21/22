@@ -42,6 +42,12 @@
 	<script>
 		$(document).ready(function() {
 
+      $("#header-scroll-arrow").click(function() {
+        $('html, body').animate({
+          scrollTop: $("#feb").offset().top
+        }, 1200);
+      });
+
 	    /* Every time the window is scrolled ... */
 	    $(window).scroll( function(){
 
@@ -73,7 +79,7 @@
 	  <div class="header-text text-center">
   	  	<h1>Looking back at 22</h1>
   	  	<p>So y22 has been a pretty big year for me. I have traveled to 3 different countries, went from being a student to a graduate to unemployled to working full time! As I have turned 23 today, I would like to take some time to reflect on what I have achieved when I was 22. Please scroll down to view the month by month breakdown. Enjoy! :)</p>
-  	  	<i class="fa fa-angle-double-down"></i>
+  	  	<i id="header-scroll-arrow" class="fa fa-angle-double-down"></i>
   	  </div>
   	</header>
 
