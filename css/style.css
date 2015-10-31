@@ -416,6 +416,9 @@ footer img{
 }
 
 @media screen and (max-width: 534px) {
+	header.fill {
+		height: 100%;
+	}
 
 	.footer-text{
 		padding: 4%;
@@ -461,4 +464,15 @@ footer img{
 		margin: -4px;
 	}
 
+}
+
+
+@media screen and (max-width: 430px) {
+	header.fill {
+		height: 680px;
+		max-height: initial;
+	}
+	#header-scroll-arrow {
+		display: none;
+	}
 }
